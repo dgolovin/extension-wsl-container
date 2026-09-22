@@ -1,0 +1,30 @@
+{
+    "name": "wslc-docker-socket",
+    "version": "1.0.0",
+    "description": "Node.js service managing Docker via wslc system session run docker system dial-stdio",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+      "build": "tsc",
+      "start": "node dist/index.js",
+      "dev": "tsx src/index.ts"
+    },
+    "keywords": [
+      "wslc",
+      "docker",
+      "socket",
+      "typescript"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "dockerode": "^5.0.1"
+    },
+    "devDependencies": {
+      "@types/dockerode": "^4.0.1",
+      "@types/node": "^26.2.0",
+      "tsx": "^4.19.0",
+      "typescript": "^7.0.2"
+    }
+  }
